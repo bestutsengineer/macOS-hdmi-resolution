@@ -1,0 +1,7 @@
+# For the pre-commit framework (https://pre-commit.com), as an alternative to
+# .githooks/pre-commit:  brew install pre-commit && pre-commit install
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks

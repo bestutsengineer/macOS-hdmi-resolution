@@ -1,0 +1,13 @@
+# gitleaks settings: its default rules, plus the few strings in this
+# repository that look like secrets and are not.
+title = "macOS-hdmi-resolution"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Display keys: MD5 hashes of monitor EDIDs and display UUIDs, used as identifiers"
+regexes = [
+    '''edid:[0-9a-f]{32}''',
+    '''uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}''',
+]

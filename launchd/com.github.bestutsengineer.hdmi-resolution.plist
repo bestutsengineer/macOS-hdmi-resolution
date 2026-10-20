@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Display rules: mirror-mode resolution and extend-mode placement.
+     A per-user login agent; install.sh fills in the path of the app's binary. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.github.bestutsengineer.hdmi-resolution</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>@BINARY@</string>
+        <string>run</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <!-- Restarted after a crash, not after "Quit" from its menu. -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <!-- Only in a graphical login session. -->
+    <key>LimitLoadToSessionType</key>
+    <string>Aqua</string>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+</dict>
+</plist>

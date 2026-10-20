@@ -1,0 +1,35 @@
+# Build output
+.build/
+build/
+DerivedData/
+*.o
+*.dSYM/
+
+# Swift Package Manager and Xcode user state
+.swiftpm/
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# Editors and macOS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs, dumps and local state: the app's own live in ~/Library and ~/.local
+*.log
+*.dump
+*.bak
+*.orig
+
+# Secrets and local settings, should any ever be added
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.mobileprovision
