@@ -10,6 +10,8 @@ does the same for KDE Plasma.
 | **Mirror rule** | An external display mirrors the laptop screen | Switches the mirrored desktop to a target mode (1920x1080 by default). When mirroring ends, the screens return to the modes you had before. |
 | **Extend rule** | Exactly one external display is extended | Places that display above the laptop screen, horizontally centred. |
 
+<img width="274" height="291" alt="image" src="https://github.com/user-attachments/assets/4be8543b-8cfb-4ee0-b47a-2371d07699d6" />
+
 Both work with any connector: HDMI, USB-C / DisplayPort and docks, and with
 1K (1920x1080), 2K (2560x1440) and 4K (3840x2160) displays. The name is
 historical; the first version only handled HDMI.
